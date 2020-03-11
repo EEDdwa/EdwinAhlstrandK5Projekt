@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name=description content="smoothieShop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webbshop</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="linkPointer">
+                <div class="name">Cuppen</div>
+            </div>
+
+            <div class="bar">
+                <label for="search">Search</label>
+                <input id="search" type="text">
+            </div>
+            
+
+            <div class="linkPointer">
+                <div class="contact">Contact</div>
+            </div>
+
+            <div class="linkPointer">
+                <div class="cartAndNumb">
+                    <span class="cart">Cart</span>
+                    <div class="numbBlock">
+                        <span id="numb">0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <section class="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis blanditiis cum enim culpa, assumenda rerum accusantium exercitationem repellendus similique est nulla repudiandae quia beatae sapiente consequuntur doloribus quibusdam error fugit! 
+            <div class="options">L=Large, M=Medium & S=Small</div>
+        </section>
+        <section class="products">
+            <div class="product-flow">
+
+                <!--Product 1-->
+                <div class="product-container">
+                    <div class="product-header">Coco</div>
+                    <div class="productImgAndOptions">
+                        <div class="product-image">
+                            <img src="img/cocoSmoothie.jpg" alt="bild på en chokladsmoothie">
+                        </div>
+                        <div class="product-sizes">
+                            <label for="cocoLarge"><div class="option">L</div></label>
+                            <input type="radio" name="large" id="cocoLarge">
+                            <label for="cocoMedium"><div class="option">M</div></label>
+                            <input type="radio" name="medium" id="cocoMedium">
+                            <label for="cocoSmall"><div class="option">S</div></label>
+                            <input type="radio" name="small" id="cocoSmall">
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-cost">30<i>kr</i></div>
+                        <button type="button" onClick="addCart()">Add to cart</button>
+                    </div>
+                </div>
+                
+                <!--Product 2-->
+                <div class="product-container">
+                    <div class="product-header">Strawberry</div>
+                    <div class="productImgAndOptions">
+                        <div class="product-image">
+                            <img src="img/strawberrySmoothie.jpg" alt="bild på en jordgubbsmoothie">
+                        </div>
+                        <div class="product-sizes">
+                            <label for="strawberryLarge"><div class="option">L</div></label>
+                            <input type="radio" name="large" id="strawberryLarge">
+                            <label for="strawberryMedium"><div class="option">M</div></label>
+                            <input type="radio" name="medium" id="strawberryMedium">
+                            <label for="strawberrySmall"><div class="option">S</div></label>
+                            <input type="radio" name="small" id="strawberrySmall">
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-cost">18<i>kr</i></div>
+                        <button type="button" onClick="addCart()">Add to cart</button>
+                    </div>
+                </div>
+                
+                <!--Product 3-->
+                <div class="product-container">
+                    <div class="product-header">Green</div>
+                    <div class="productImgAndOptions">
+                        <div class="product-image">
+                            <img src="img/greenSmoothie.jpg" alt="bild på en grön smoothie">
+                        </div>
+                        <div class="product-sizes">
+                            <label for="greenLarge"><div class="option">L</div></label>
+                            <input type="radio" name="large" id="greenLarge">
+                            <label for="greenMedium"><div class="option">M</div></label>
+                            <input type="radio" name="medium" id="greenMedium">
+                            <label for="greenSmall"><div class="option">S</div></label>
+                            <input type="radio" name="small" id="greenSmall">
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-cost">90<i>kr</i></div>
+                        <button type="button" onClick="addCart()">Add to cart</button>
+                    </div>
+                </div>
+
+                <!--Product 4-->
+                <div class="product-container">
+                    <div class="product-header">Coconut</div>
+                    <div class="productImgAndOptions">
+                        <div class="product-image">
+                            <img src="img/coconutSmoothie.jpg" alt="bild på en kokos smoothie">
+                        </div>
+                        <div class="product-sizes">
+                            <label for="coconutLarge"><div class="option">L</div></label>
+                            <input type="radio" name="large" id="coconutLarge">
+                            <label for="coconutMedium"><div class="option">M</div></label>
+                            <input type="radio" name="medium" id="coconutMedium">
+                            <label for="coconutSmall"><div class="option">S</div></label>
+                            <input type="radio" name="small" id="coconutSmall">
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-cost">40<i>kr</i></div>
+                        <button type="button" onClick="addCart()">Add to cart</button>
+                    </div>
+                </div>
+
+
+                <!--Product 5-->
+                <div class="product-container">
+                    <div class="product-header">Mango</div>
+                    <div class="productImgAndOptions">
+                        <div class="product-image">
+                            <img src="img/mangoSmoothie.jpg" alt="bild på en mango smoothie">
+                        </div>
+                        <div class="product-sizes">
+                            <label for="mangoLarge"><div class="option">L</div></label>
+                            <input type="radio" name="large" id="mangoLarge">
+                            <label for="mangoMedium"><div class="option">M</div></label>
+                            <input type="radio" name="medium" id="mangoMedium">
+                            <label for="mangoSmall"><div class="option">S</div></label>
+                            <input type="radio" name="small" id="mangoSmall">
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-cost">74<i>kr</i></div>
+                        <button type="button" onClick="addCart()">Add to cart</button>
+                    </div>
+                </div>
+
+                <!--Product 6-->
+                <div class="product-container">
+                    <div class="product-header">Blueberry</div>
+                    <div class="productImgAndOptions">
+                        <div class="product-image">
+                            <img src="img/blueberrySmoothie.jpg" alt="bild på en blåbärs smoothie">
+                        </div>
+                        <div class="product-sizes">
+                            <label for="blueberryLarge"><div class="option">L</div></label>
+                            <input type="radio" name="large" id="blueberryLarge">
+                            <label for="blueberryMedium"><div class="option">M</div></label>
+                            <input type="radio" name="medium" id="blueberryMedium">
+                            <label for="blueberrySmall"><div class="option">S</div></label>
+                            <input type="radio" name="small" id="blueberrySmall">
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-cost">12<i>kr</i></div>
+                        <button type="button" onClick="addCart()">Add to cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <div class="product-container">
+            <div class="product-header"></div>
+            <div class="prodcut-img"></div>
+            <div class="product-options"></div>
+            <div class="product-footer"></div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="mail">Mail: cuppen.247@gmail.com</div>
+        <div class="instagram">Instagram: @cuppen24/7</div>
+        <div class="facebook">Facebook: CuppenSweden</div>
+        <div class="phone">Tel: 0712345678</div>
+    </footer>
+</body>
+</html>
